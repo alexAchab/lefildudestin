@@ -1,0 +1,56 @@
+:root {
+    --dark: #201f20;
+    --light: #ebeaeb;
+    --gold: #b49747;
+    --blue: #313B5A;
+    --titleFont: 'Josefin Slab', serif;
+    --textFont: Verdana, Arial, Helvetica, sans-serif;
+    --shadow: 3px 3px 3px #0F0F0F;
+    --border: 2px solid var(--gold);
+}
+
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--dark);
+    color: var(--dark);
+    font-size: 16px;
+    font-family: var(--textFont);
+    min-height: 100vh;
+}
+
+main {
+    width: 100%;
+    background: var(--light);
+    border-radius: 0.4rem;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    margin: 0;
+    font-family: var(--titleFont);
+    font-size: 22px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+p {
+    margin: 0;
+}
+
+.hide {
+    display: none;
+}
+
+.show {
+    display: flex;
+}
+
+.italic {
+    font-style: italic;
+}

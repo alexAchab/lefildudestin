@@ -1,0 +1,48 @@
+/*BUTTONS*/
+.button {
+    background-color: var(--gold);
+    color: var(--blue);
+    font-size: 18px;
+    border: 2px solid transparent;
+    width: fit-content;
+    height: 36px;
+    padding: 0 1rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--dark);
+    color: var(--gold);
+}
+
+/*FORMS*/
+form {
+    gap: 2.8rem;
+}
+
+form .fields-summary {
+    gap: 0.8rem;
+}
+
+form .fields {
+    gap: 2rem;
+}
+
+form .field {
+    gap: 0.2rem;
+}
+
+form .field#results {
+    gap: 4rem;
+}
+
+form input {
+    min-height: 32px;
+    border: 1px solid var(--blue);
+    background-color: #f3f3f4;
+}
+
+form input:focus {
+    outline: 4px solid var(--gold);
+}

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Le fil du destin de Ashes Arise">
+    <meta name="author" content="Ashes Arise">
+    <link rel="canonical" href="https://nicolasgen4.github.io/lefildudestin/index.html">
+    <meta property="og:locale" content="fr_FR">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Le fil du destin">
+    <meta property="og:image" content="https://nicolasgen4.github.io/lefildudestin/img/og_img.png">
+    <meta property="og:description" content="Le fil du destin de Ashes Arise">
+    <meta property="og:url" content="https://nicolasgen4.github.io/lefildudestin">
+    <title>Le fil du destin</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <script src="js/scripts.js" defer></script>
+    <link rel="shortcut icon" href="img/skull.svg" type="image/x-icon">
+</head>
+
+<body class="flex-column">
+
+    <main class="wrapper">
+
+        <section class="content flex-column">
+
+            <h1>Le fil du destin</h1>
+            <form id=" diceForm" class="flex-column">
+                <div class="fields flex-wrap">
+                    <div class="field flex-column">
+                        <label for="numDice">Nombre de dés</label>
+                        <input type="number" id="numDice" min="1" value="1">
+                    </div>
+                    <div class="field flex-column">
+                        <label for="numFaces">Nombre de faces</label>
+                        <input type="number" id="numFaces" min="2" value="6">
+                    </div>
+                </div>
+                <div class="fields-summary flex-column">
+                    <p class="italic">+ Dés bonus (optionnel) :</p>
+                    <div class="fields flex-wrap">
+                        <div class="field flex-column">
+                            <label for="bonusNumDice">Nombre de dés</label>
+                            <input type="number" id="bonusNumDice" min="0" placeholder="Ou bonus fixe">
+                        </div>
+                        <div class="field flex-column">
+                            <label for="bonusNumFaces">Nombre de faces</label>
+                            <input type="number" id="bonusNumFaces" min="2" placeholder="0">
+                        </div>
+                    </div>
+                </div>
+                <div class="field flex-wrap flex-vcentre" id="results">
+                    <button type="button" class="button flex flex-vcentre" id="roll">Lancer !</button>
+                </div>
+            </form>
+
+        </section>
+
+    </main>
+
+</body>
+
+</html>

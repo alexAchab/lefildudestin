@@ -1,0 +1,39 @@
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-vcentre {
+    align-items: center;
+}
+
+.flex-hcentre {
+    justify-content: center;
+}
+
+.flex-wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.self-center {
+    align-self: center;
+}
+
+.grow {
+    flex-grow: 1;
+}
+
+.responsive-img {
+    object-fit: contain;
+    max-width: 100%;
+}

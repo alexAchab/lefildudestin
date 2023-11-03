@@ -1,0 +1,22 @@
+.content {
+    max-width: 900px;
+    margin: auto;
+    padding: 2rem 0;
+    gap: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+    .content {
+        padding: 2rem 1rem;
+    }
+}
+
+#result {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    border: 2px solid var(--gold);
+    width: fit-content;
+    height: 32px;
+    padding: 0 1rem;
+}
