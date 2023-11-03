@@ -11,12 +11,31 @@
     }
 }
 
-#result {
-    display: flex;
-    align-items: center;
-    font-size: 18px;
-    border: 2px solid var(--gold);
-    width: fit-content;
-    height: 32px;
-    padding: 0 1rem;
+.rolldices {
+    gap: 2rem;
+}
+
+@media screen and (max-width: 920px) {
+    .rolldices {
+        flex-direction: column-reverse;
+    }
+}
+
+#results {
+    max-height: 272px;
+    overflow-y: auto;
+    gap: 0.4rem;
+}
+
+#results * {
+    overflow-anchor: none;
+}
+
+#anchor {
+    overflow-anchor: auto;
+    min-height: 1px;
+}
+
+.result span {
+    font-weight: 700;
 }
