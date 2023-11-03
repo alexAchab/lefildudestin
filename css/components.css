@@ -57,6 +57,12 @@ form .field:nth-child(3) {
     gap: 2rem;
 }
 
+@media screen and (max-width: 516px) {
+    form .field:nth-child(3) {
+        justify-content: space-between;
+    }
+}
+
 form .field#results {
     gap: 4rem;
 }
