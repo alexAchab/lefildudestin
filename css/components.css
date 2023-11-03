@@ -63,22 +63,6 @@ form .field:nth-child(3) {
     }
 }
 
-form .field#results {
-    gap: 4rem;
-}
-
-@media screen and (max-width: 516px) {
-    form .field#results {
-        justify-content: space-between;
-    }
-}
-
-@media screen and (max-width: 348px) {
-    form .field#results {
-        gap: 2rem;
-    }
-}
-
 form input {
     min-height: 32px;
     border: 1px solid var(--blue);
