@@ -30,34 +30,40 @@
         <section class="content flex-column">
 
             <h1>Le fil du destin</h1>
-            <form id="diceForm" class="flex-column">
-                <div class="fields flex-wrap">
-                    <div class="field flex-column">
-                        <label for="numDice">Nombre de dés</label>
-                        <input type="number" id="numDice" min="1" value="1">
-                    </div>
-                    <div class="field flex-column">
-                        <label for="numFaces">Nombre de faces</label>
-                        <input type="number" id="numFaces" min="2" value="6">
-                    </div>
-                </div>
-                <div class="fields-summary flex-column">
-                    <p class="italic">+ Bonus (optionnel) :</p>
+            <div class="flex-wrap rolldices">
+                <form id="diceForm" class="flex-column">
                     <div class="fields flex-wrap">
                         <div class="field flex-column">
-                            <label for="bonusNumDice">Nombre de dés</label>
-                            <input type="number" id="bonusNumDice" min="0" placeholder="Ou bonus fixe">
+                            <label for="numDice">Nombre de dés</label>
+                            <input type="number" id="numDice" min="1" value="1">
                         </div>
                         <div class="field flex-column">
-                            <label for="bonusNumFaces">Nombre de faces</label>
-                            <input type="number" id="bonusNumFaces" min="2" placeholder="0">
+                            <label for="numFaces">Nombre de faces</label>
+                            <input type="number" id="numFaces" min="2" value="6">
                         </div>
                     </div>
+                    <div class="fields-summary flex-column">
+                        <p class="italic">+ Bonus (optionnel) :</p>
+                        <div class="fields flex-wrap">
+                            <div class="field flex-column">
+                                <label for="bonusNumDice">Nombre de dés</label>
+                                <input type="number" id="bonusNumDice" min="0" placeholder="Ou valeur fixe">
+                            </div>
+                            <div class="field flex-column">
+                                <label for="bonusNumFaces">Nombre de faces</label>
+                                <input type="number" id="bonusNumFaces" min="2" placeholder="0">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="field flex-wrap flex-vcentre">
+                        <button type="button" class="button flex flex-vcentre" id="roll">Lancer !</button>
+                        <button class="button-reverse flex flex-vcentre" onclick="reload()">Réinitialiser</button>
+                    </div>
+                </form>
+                <div id="results" class="flex-column grow">
+                    <div id="anchor"></div>
                 </div>
-                <div class="field flex-wrap flex-vcentre" id="results">
-                    <button type="button" class="button flex flex-vcentre" id="roll">Lancer !</button>
-                </div>
-            </form>
+            </div>
 
         </section>
 
