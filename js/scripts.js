@@ -1,3 +1,4 @@
+let count = 1;
 const rollDice = () => {
     const getIntegerValue = (elementId, defaultValue = 0) => {
         const value = parseInt(document.getElementById(elementId).value);
@@ -15,16 +16,19 @@ const rollDice = () => {
 
     const result = roll(numDice, numFaces) + roll(bonusNumDice, bonusNumFaces);
 
-    let resultParagraph = document.getElementById('result');
-    if (!resultParagraph) {
-        resultParagraph = document.createElement('p');
-        resultParagraph.id = 'result';
-        document.getElementById('results').appendChild(resultParagraph);
-    }
+    const anchor = document.getElementById('anchor');
+    const results = document.getElementById('results');
 
-    resultParagraph.textContent = `Résultat : ${result}`;
+    let resultParagraph = document.createElement('p');
+    resultParagraph.classList.add("result");
+    results.insertBefore(resultParagraph, anchor);
+    resultParagraph.textContent = `#${count} - Le destin a jeté les dés : `;
+
+    let resultSpan = document.createElement('span');
+    resultParagraph.appendChild(resultSpan);
+    resultSpan.textContent = result;
+
+    count++;
 };
 
 document.getElementById('roll').addEventListener('click', rollDice);
-
-
