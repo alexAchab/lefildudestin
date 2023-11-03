@@ -11,9 +11,23 @@
     cursor: pointer;
 }
 
-.button:hover {
+.button:hover,
+.button-reverse:hover {
     background-color: var(--dark);
     color: var(--gold);
+    border: 2px solid transparent;
+}
+
+.button-reverse {
+    background-color: transparent;
+    color: var(--blue);
+    font-size: 18px;
+    border: var(--border);
+    width: fit-content;
+    height: 36px;
+    padding: 0 1rem;
+    box-shadow: var(--shadow);
+    cursor: pointer;
 }
 
 /*FORMS*/
@@ -37,6 +51,10 @@ form .field {
     form .field {
         width: 100%;
     }
+}
+
+form .field:nth-child(3) {
+    gap: 2rem;
 }
 
 form .field#results {
