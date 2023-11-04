@@ -79,5 +79,5 @@ form input {
 }
 
 form input:focus {
-    outline: 4px solid var(--gold);
+    outline: 3.4px solid var(--gold);
 }
