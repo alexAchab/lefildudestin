@@ -48,6 +48,10 @@ form .field {
 }
 
 @media screen and (max-width: 516px) {
+    form {
+        gap: 2.2rem;
+    }
+
     form .field {
         width: 100%;
     }
