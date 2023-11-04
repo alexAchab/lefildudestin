@@ -32,8 +32,3 @@
 .grow {
     flex-grow: 1;
 }
-
-.responsive-img {
-    object-fit: contain;
-    max-width: 100%;
-}
