@@ -8,7 +8,7 @@ const scrollToBottom = () => {
     resultsDiv.scrollTop = anchorDiv.offsetTop;
 }
 
-//Roll thes dices!
+//Roll the dices!
 const rollDice = () => {
     const getIntegerValue = (elementId, defaultValue = 0) => {
         const value = parseInt(document.getElementById(elementId).value);
