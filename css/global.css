@@ -43,14 +43,6 @@ p {
     margin: 0;
 }
 
-.hide {
-    display: none;
-}
-
-.show {
-    display: flex;
-}
-
 .italic {
     font-style: italic;
 }
