@@ -1,7 +1,7 @@
 /*BUTTONS*/
 .button {
     background-color: var(--gold);
-    color: #0B0A0B;
+    color: var(--dark);
     font-size: 18px;
     border: 2px solid transparent;
     width: fit-content;
@@ -20,12 +20,12 @@
 
 .button:focus-visible,
 .button-reverse:focus-visible {
-    outline: 3.4px solid #0B0A0B;
+    outline: 3.4px solid var(--dark);
 }
 
 .button-reverse {
     background-color: transparent;
-    color: #0B0A0B;
+    color: var(--dark);
     font-size: 18px;
     border: var(--border);
     width: fit-content;
