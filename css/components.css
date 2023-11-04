@@ -1,7 +1,7 @@
 /*BUTTONS*/
 .button {
     background-color: var(--gold);
-    color: var(--blue);
+    color: #0B0A0B;
     font-size: 18px;
     border: 2px solid transparent;
     width: fit-content;
@@ -20,7 +20,7 @@
 
 .button-reverse {
     background-color: transparent;
-    color: var(--blue);
+    color: #0B0A0B;
     font-size: 18px;
     border: var(--border);
     width: fit-content;
