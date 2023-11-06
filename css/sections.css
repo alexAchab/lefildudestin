@@ -35,6 +35,13 @@
     }
 }
 
+/*IFRAME RULES*/
+@media screen and (height: 494px) {
+    #results {
+        max-height: 100px;
+    }
+}
+
 #results * {
     overflow-anchor: none;
 }
