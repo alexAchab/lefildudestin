@@ -22,12 +22,6 @@ body {
     min-height: 100vh;
 }
 
-@media screen and (height: 666px) {
-    body {
-        background-color: transparent;
-    }
-}
-
 main {
     width: 100%;
     background: var(--light);
@@ -51,4 +45,15 @@ p {
 
 .italic {
     font-style: italic;
+}
+
+/*IFRAME RULES*/
+@media screen and (height: 494px) {
+    body {
+        background-color: transparent;
+    }
+
+    #results {
+        max-height: 100px;
+    }
 }
