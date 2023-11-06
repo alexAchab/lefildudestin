@@ -22,6 +22,12 @@ body {
     min-height: 100vh;
 }
 
+@media screen and (height: 666px) {
+    body {
+        background-color: transparent;
+    }
+}
+
 main {
     width: 100%;
     background: var(--light);
